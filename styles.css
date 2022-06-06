@@ -1,0 +1,108 @@
+body {
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 100px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  .wrap {
+    width: 300px;
+    margin: auto
+  }
+  #input {
+    width: 78%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  #btn {
+    width: 20%;
+    background: #000000;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 15px;
+  text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #result {
+    margin-bottom: 50px;
+  }
+  .btn {
+    background: red;
+    border: none;
+    color: #fff;
+  margin-left: 15px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  }
+  .li {
+    padding: 4px 8px;
+    background: #eddfff;
+    border: 1px solid brown;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    text-transform: capitalize;
+  }
+  .li-active {
+    color: #555;
+    text-decoration: line-through;
+    background: #000;
+  }
+  .li-active .btn {
+    color: #555;
+    text-decoration: line-through;
+    background: #000;
+  }
+
+  input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
+  .totalBlock {
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .title {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 15%;
+  }
+  
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
